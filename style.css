@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+    color: #4f4646;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-size: 2em;
+}
+
+header{
+    background-color: rgb(69, 66, 66);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+}
+
+section{
+    padding: 20px;
+    margin: 20px auto;
+    height: 100vh;
+}
+
+div{
+    width: 50%;
+    
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+#sobre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projeto{
+    background-color: #828080;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 50%;
+    height: 350px;
+    margin-left: 25%;
+}
+
+h2{
+    margin-bottom: 10px;
+    font-size: 4em;
+    text-align: center;
+}
+
+/* --------RESPONSIVO-------*/
+@media screen and (max-width: 844px) {
+    #sobre{
+        display: block;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    
+    div{
+        width: 100%;
+        padding: 20px;
+    }
+    
+   section{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+    #projetos{
+        width: 100%;
+    }
+    .projeto{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+}
+/* --------MODO ESCURO------ */
+
+
+.dark-theme{
+    background-color: #333;
+    color: white;
+}
+
+.dark-theme header{
+    background-color: #222
+}
+
+.dark-theme header button{
+    background-color: #444;
+    color: white;
+}
+
+.dark-theme .projeto{
+    background-color: #555;
+}
